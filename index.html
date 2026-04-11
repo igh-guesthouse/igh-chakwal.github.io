@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Islamabad Guest House Chakwal - Premium AC & Non-AC rooms at Talagang Road, Chakwal. Book your luxury stay at affordable prices.">
+    <meta name="keywords" content="Guest House Chakwal, Islamabad Guest House, Best Hotel in Chakwal, Talagang Road Hotels, Luxury Stay Chakwal">
+    <title>Islamabad Guest House Chakwal | Best Stay in City</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root { 
+            --primary: #1a252f; 
+            --accent: #f1c40f; 
+            --success: #25d366; 
+            --light: #fdfdfd; 
+            --nav-bg: #fff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+
+        body { background: #fff; color: #333; line-height: 1.6; }
+
+        /* --- Navigation --- */
+        nav { 
+            background: var(--nav-bg); 
+            padding: 10px 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo-img {
+            height: 60px; /* Adjusted size for good visibility */
+            width: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #ddd;
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        
+        .logo-text span {
+            color: #ddd;
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
+
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { 
+            color: var(--primary); 
+            text-decoration: none; 
+            font-size: 0.9rem; 
+            font-weight: 600; 
+            transition: 0.3s; 
+            text-transform: uppercase;
+        }
+        
+        nav ul li a:hover { 
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 5px;
+        }
+
+        /* --- Hero Section --- */
+        .hero { 
+            height: 75vh; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1350&q=80') center/cover;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            color: white; 
+            text-align: center; 
+            padding: 0 20px; 
+            margin-top: -10px; /* Overlap navbar slightly for blended look */
+        }
+        
+        .hero-logo {
+            height: 120px; /* Large central logo */
+            width: 120px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(241, 196, 15, 0.3);
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 15px; color: var(--accent); text-shadow: 2px 2px 8px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.3rem; margin-bottom: 30px; max-width: 800px; color: #ddd; }
+
+        /* --- Common Styles --- */
+        .container { padding: 80px 10%; }
+        h2 { text-align: center; font-size: 2.8rem; margin-bottom: 50px; color: var(--primary); position: relative;}
+        h2::after { content: ''; width: 80px; height: 3px; background: var(--accent); position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%); }
+        
+        .btn { 
+            padding: 15px 40px; 
+            border-radius: 50px; 
+            text-decoration: none; 
+            font-weight: 700; 
+            display: inline-block; 
+            transition: 0.3s; 
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        .btn-main { background: var(--accent); color: var(--primary); }
+        .btn-main:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(241, 196, 15, 0.4); }
+        .btn-whatsapp { background: var(--success); color: white; display: flex; align-items: center; gap: 8px; }
+        .btn-whatsapp:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4); }
+
+        /* --- Services Section --- */
+        .services-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 30px; 
+        }
+        .s-card { 
+            background: var(--light); 
+            padding: 40px; 
+            border-radius: 20px; 
+            text-align: center; 
+            transition: 0.3s;
+            border: 1px solid #eee;
+        }
+        .s-card:hover { transform: translateY(-10px); background: white; box-shadow: 0 15px 40px rgba(0,0,0,0.08); border-color: transparent;}
+        .s-card i { font-size: 3rem; color: var(--accent); margin-bottom: 20px; }
+        .s-card h3 { margin-bottom: 15px; color: var(--primary); font-size: 1.4rem; }
+        .s-card p { color: #666; font-size: 0.95rem; margin-bottom: 20px;}
+
+        /* --- Gallery Preview --- */
+        .gallery-container { background: #fdfdfd; }
+        .gallery-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            margin-top: 50px;
+        }
+        .gallery-item { 
+            border-radius: 15px; 
+            overflow: hidden; 
+            height: 300px; 
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+            position: relative;
+        }
+        .gallery-item:hover { transform: scale(1.03); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+        .gallery-overlay {
+            position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+            display: flex; align-items: flex-end; padding: 20px;
+        }
+        .gallery-overlay h4 { color: white; font-size: 1.3rem; margin-bottom: 5px; }
+
+        /* --- Proper Footer --- */
+        footer { 
+            background: var(--primary); 
+            color: #ddd; 
+            padding: 80px 10% 20px 10%; 
+        }
+        .footer-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 40px; 
+            margin-bottom: 50px;
+        }
+        .footer-col h4 { color: var(--accent); margin-bottom: 25px; font-size: 1.3rem; position: relative;}
+        .footer-col h4::after { content: ''; width: 40px; height: 2px; background: var(--accent); position: absolute; bottom: -8px; left: 0; }
+        .footer-col p, .footer-col li { font-size: 0.95rem; color: #bdc3c7; list-style: none; margin-bottom: 12px; }
+        .footer-col li a { color: #bdc3c7; text-decoration: none; transition: 0.3s;}
+        .footer-col li a:hover { color: var(--accent); padding-left: 5px; }
+        
+        .footer-logo {
+            height: 90px;
+            width: 90px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .social-icons { margin-top: 20px;}
+        .social-icons a { color: white; font-size: 1.6rem; margin-right: 20px; transition: 0.3s; }
+        .social-icons a:hover { color: var(--accent); transform: scale(1.1); }
+        
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 25px; text-align: center; font-size: 0.85rem; color: #7f8c8d; }
+
+        /* --- WhatsApp Float --- */
+        .whatsapp-float { 
+            position: fixed; bottom: 30px; right: 30px; 
+            background: var(--success); color: white; 
+            width: 65px; height: 65px; border-radius: 50%; 
+            display: flex; align-items: center; justify-content: center; 
+            font-size: 32px; z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+
+        /* --- Mobile Responsive --- */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 3rem; }
+            h2 { font-size: 2.3rem; }
+        }
+        
+        @media (max-width: 768px) {
+            nav { flex-direction: column; gap: 10px; padding: 15px; }
+            nav ul li { margin: 0 10px; }
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1.1rem; }
+            .container { padding: 60px 5%; }
+            .services-grid { gap: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/923325902673?text=Assalam-o-Alaikum, I want to book a room at IGH Chakwal." class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <nav>
+        <a href="index.html" class="logo-container">
+            <img src="https://haroonxhub.com/wp-content/uploads/2026/logo_igh_chakwal.png" alt="Islamabad Guest House Logo" class="logo-img">
+            <div class="logo-text">
+                IGH <span>Chakwal</span>
+            </div>
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <img src="https://haroonxhub.com/wp-content/uploads/2026/logo_igh_chakwal.png" alt="Large Logo IGH" class="hero-logo">
+        <h1>Islamabad Guest House</h1>
+        <p>Your premium home-away-from-home in Chakwal. Located at Bakhshwal Plaza, Talagang Road.</p>
+        <a href="https://wa.me/923325902673?text=Hi, I want to check room availability" class="btn btn-main">Book Your Stay Now</a>
+    </header>
+
+    <section id="rooms" class="container">
+        <h2>Humaray Saf Sutre Kamre</h2>
+        <div class="services-grid">
+            <div class="s-card">
+                <i class="fas fa-snowflake"></i>
+                <h3>Deluxe AC Rooms</h3>
+                <p>Fully air-conditioned rooms with comfortable beds, TV, and neat washrooms.</p>
+                <a href="https://wa.me/923325902673?text=Book Deluxe AC Room" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Book Now</a>
+            </div>
+            <div class="s-card">
+                <i class="fas fa-fan"></i>
+                <h3>Standard Non-AC</h3>
+                <p>Clean, airy rooms with ceiling fans at highly affordable rates for budget stay.</p>
+                <a href="https://wa.me/923325902673?text=Book Standard Non-AC Room" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Book Now</a>
+            </div>
+            <div class="s-card">
+                <i class="fas fa-users"></i>
+                <h3>Family Suites</h3>
+                <p>Spacious rooms designed for families with up to 4-5 members.</p>
+                <a href="https://wa.me/923325902673?text=Book Family Suite" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container gallery-container">
+        <h2>Glimpse of our Comfort</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=600" alt="Royal Blue Room">
+                <div class="gallery-overlay"><h4>Royal Blue Deluxe</h4></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?q=80&w=600" alt="Family Executive Suite">
+                <div class="gallery-overlay"><h4>Family Suite</h4></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=600" alt="Standard Non-AC Room">
+                <div class="gallery-overlay"><h4>Standard Room</h4></div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:50px;">
+            <a href="gallery.html" class="btn btn-main">View Full Gallery</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col" style="text-align: center;">
+                <img src="https://haroonxhub.com/wp-content/uploads/2026/logo_igh_chakwal.png" alt="Footer Logo IGH" class="footer-logo">
+                <p style="text-align: center;">Chakwal shehar ka sab se mahfooz aur saaf guest house. Quality rehaish munasib rate par.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="gallery.html">Photo Gallery</a></li>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Bakhshwal Plaza, Talagang Road, Chakwal</p>
+                <p><i class="fas fa-phone"></i> 0332-5902673</p>
+                <p><i class="fas fa-envelope"></i> info@ighchakwal.com</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            &copy; 2026 Islamabad Guest House Chakwal | Best Luxury Stay in City
+        </div>
+    </footer>
+
+</body>
+</html>
